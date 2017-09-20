@@ -459,8 +459,8 @@ var urls = [ "https://i.imgur.com/BHPMFuz.jpg", "https://i.imgur.com/dHqVjAX.jpg
 "https://imgur.com/u4Pu19H.png" ];
 
 function refresh_img() {
-	image_url = urls[Math.floor(Math.random()*urls.length)];
-	image_element = document.getElementById('comic');
+	var image_url = urls[Math.floor(Math.random()*urls.length)];
+	var image_element = document.getElementById('comic');
 	image_element.src = image_url;
 }
 
